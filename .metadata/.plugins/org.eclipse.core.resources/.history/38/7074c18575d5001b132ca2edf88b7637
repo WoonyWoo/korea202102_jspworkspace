@@ -1,0 +1,56 @@
+package site0621.board.model;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import site0621.board.model.domain.Board;
+import site0621.util.PoolManager;
+
+public class BoardDAO {
+	PoolManager pool = PoolManager.getInstance();
+	
+	//insert
+	public int insert(Board board) {
+		Connection con=null;
+		PreparedStatement pstmt=null;
+		con=pool.getConnection();
+		int result=0;
+		
+		String sql = "insert into board(title, writer, content) values(?,?,?)";
+		try {
+			pstmt=con.prepareStatement(sql);
+			pstmt.setString(1, board.getTitle());
+			pstmt.setString(2, board.getWriter());
+			pstmt.setString(3, board.getContent());
+			result=pstmt.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			pool.release(con, pstmt);
+		}
+		return result;
+	}
+	
+	//목록
+	public void selectAll() {
+		Connection con=null;
+		PreparedStatement pstmt=null;
+		con=pool.getConnection();
+	}
+	
+	//한 건 가져오기
+	public void select() {
+		
+	}
+	
+	//수정하기
+	public void update() {
+		
+	}
+	
+	//삭제하기
+	public void delete() {
+		
+	}
+}

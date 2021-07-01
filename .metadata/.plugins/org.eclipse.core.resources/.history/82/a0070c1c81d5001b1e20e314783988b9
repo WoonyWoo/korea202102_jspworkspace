@@ -1,0 +1,8 @@
+package com.koreait.site0622.model.mybatis;
+
+public class Test {
+	public static void main(String[] args) {
+		//mybatis가 제대로 동작하는지 테스트해보자!
+		
+	}
+}

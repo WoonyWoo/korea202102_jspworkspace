@@ -1,0 +1,5 @@
+package com.koreait.mvcframework.controller.blood;
+
+public class BloodController {
+
+}

@@ -1,0 +1,14 @@
+package com.koreait.site0622.model.mybatis;
+
+import org.apache.ibatis.session.SqlSession;
+
+public class Test {
+	public static void main(String[] args) {
+		//mybatis가 제대로 동작하는지 테스트해보자!
+		MybatisConfigManager mybatisConfigManager = MybatisConfigManager.getInstance();
+		
+		//이미 SqlSession 내부에서는 db와 접속이 처리되어 있다..
+		SqlSession sqlSession = mybatisConfigManager.getSession();
+		sqlSession.insert(null); //mybatis 프레임웍으로 하여금 insert를 수행하라!!
+	}
+}

@@ -1,0 +1,9 @@
+package com.koreait.site0622.model.board.dao;
+
+import java.util.List;
+
+public class HibernateBoardDAO {
+	public List selectAll() {
+		
+	}
+}

@@ -1,0 +1,11 @@
+package site0621.board.model.domain;
+
+public class Board {
+
+	private int board_id;
+	private Sting title;
+	private Sting writer;
+	private Sting content;
+	private Sting regdate;
+	private int hit;
+}

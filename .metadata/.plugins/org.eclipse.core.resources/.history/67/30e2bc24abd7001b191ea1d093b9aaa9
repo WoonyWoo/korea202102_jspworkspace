@@ -1,0 +1,33 @@
+package com.koreait.site0622.model.member.dao;
+
+import java.util.List;
+
+import com.koreait.site0622.model.domain.Member;
+
+public class MybatisMemberDAO implements MemberDAO{
+
+	public Member getMemberById(String id) {
+		return null;
+	}
+
+	public int regist(Member member) {
+		return 0;
+	}
+
+	public int delete(Member member) {
+		return 0;
+	}
+
+	public List selectAll() {
+		return null;
+	}
+
+	public Member select(int member_id) {
+		return null;
+	}
+
+	public int update(Member member) {
+		return 0;
+	}
+
+}

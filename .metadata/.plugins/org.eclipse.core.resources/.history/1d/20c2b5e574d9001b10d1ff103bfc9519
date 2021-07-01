@@ -1,0 +1,7 @@
+package com.koreait.tourapp.controller.place;
+
+import org.xml.sax.helpers.DefaultHandler;
+
+public class CultureHandler extends DefaultHandler{
+	
+}

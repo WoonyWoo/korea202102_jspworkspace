@@ -1,0 +1,5 @@
+package com.koreait.site0625.model.reboard.dao;
+
+public class MybatisReBoardDAO {
+
+}

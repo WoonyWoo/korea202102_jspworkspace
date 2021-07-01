@@ -1,0 +1,5 @@
+package com.koreait.site0622.model.office.dao;
+
+public class EmpDAO {
+
+}

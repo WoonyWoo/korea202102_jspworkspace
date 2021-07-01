@@ -1,0 +1,5 @@
+package com.koreait.mvcframework.model.movie;
+
+public class MovieService {
+
+}

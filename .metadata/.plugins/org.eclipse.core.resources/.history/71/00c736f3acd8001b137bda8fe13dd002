@@ -1,0 +1,33 @@
+package com.koreait.site0622.model.comments.dao;
+
+import java.util.List;
+
+import com.koreait.site0622.model.domain.Comments;
+
+public class JdbcCommentsDAO implements CommentsDAO{
+
+	public int insert(Comments comments) {
+		return 0;
+	}
+
+	public List selectAll() {
+		return null;
+	}
+
+	public Comments select(int comments_id) {
+		return null;
+	}
+
+	public int update(Comments comments) {
+		return 0;
+	}
+
+	public int delete(int comments_id) {
+		return 0;
+	}
+
+	public List selectByNewsId(int news_id) {
+		return null;
+	}
+
+}

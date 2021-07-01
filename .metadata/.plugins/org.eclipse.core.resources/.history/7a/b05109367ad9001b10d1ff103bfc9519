@@ -1,0 +1,12 @@
+package study.gson;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class GSonTest {
+	//과일의 목록을 표현하는 json 문자열을 출력
+	public static void main(String[] args) {
+		//순서있는것(List), 순서 없는것(Set), key-value쌍(Map)
+		Map map=new HashMap();
+	}
+}

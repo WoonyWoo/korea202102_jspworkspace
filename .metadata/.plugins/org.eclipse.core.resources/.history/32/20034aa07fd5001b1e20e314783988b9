@@ -1,0 +1,22 @@
+package com.koreait.site0622.model.mybatis;
+
+import java.io.IOException;
+import java.io.InputStream;
+
+import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+
+//Mybatis의 설정파일 XML을 읽어들이는 클래스
+public class MybatisConfigManager {
+	public MybatisConfigManager() {
+		//Mybatis의 설정파일 위치
+		String resource = "";
+		try {
+			InputStream inputStream = Resources.getResourceAsStream(resource);
+			SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}

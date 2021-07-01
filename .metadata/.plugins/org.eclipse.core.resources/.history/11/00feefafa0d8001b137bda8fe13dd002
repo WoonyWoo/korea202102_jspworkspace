@@ -1,0 +1,26 @@
+package com.koreait.site0622.controller.news;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.koreait.site0622.model.domain.News;
+
+//뉴스기사 등록 요청 처리 서블릿
+public class RegistServlet extends HttpServlet{
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("utf-8"); //파라미터값 깨지지 않도록 인코딩
+		String title = request.getParameter("title");
+		String writer = request.getParameter("writer");
+		String content = request.getParameter("content");
+		
+		//VO담기
+		News news = new News();
+		news.setTitle(title);
+		news.setWriter(writer);
+		news.setContent(content);
+	}
+}

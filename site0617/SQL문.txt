@@ -1,0 +1,17 @@
+<SQL 문>
+
+//갤러리 테이블 생성
+create table gallery(
+gallery_id number primary key
+, title varchar(100)
+, writer varchar(20)
+, content clob
+, regdate date default sysdate
+, filename varchar(30)
+, hit number default 0
+);
+
+//갤러리 시퀀스 생성
+create sequence seq_gallery
+increment by 1
+start with 1;

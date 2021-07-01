@@ -1,0 +1,6 @@
+package com.koreait.site0622.model.board.dao;
+
+
+public class HibernateBoardDAO {
+	
+}

@@ -1,0 +1,6 @@
+package com.koreait.site0622.controller.board;
+
+//게시물 삭제요청을 하는 서블릿
+public class DeleteServlet {
+
+}

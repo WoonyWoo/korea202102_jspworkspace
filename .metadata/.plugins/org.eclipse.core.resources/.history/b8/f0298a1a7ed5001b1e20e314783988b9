@@ -1,0 +1,9 @@
+package com.koreait.site0622.model.domain;
+
+public class Board {
+	private int board_id;
+	private String title;
+	private String writer;
+	private String regdate;
+	private int hit;
+}

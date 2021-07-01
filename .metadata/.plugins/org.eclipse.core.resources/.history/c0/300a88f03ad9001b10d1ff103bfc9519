@@ -1,0 +1,47 @@
+package com.koreait.site0625.model.reboard.dao;
+
+import java.util.List;
+
+import org.apache.ibatis.session.SqlSession;
+
+import com.koreait.site0625.model.domain.ReBoard;
+import com.koreait.site0625.model.mybatis.MybatisConfigManager;
+
+public class MybatisReBoardDAO implements ReBoardDAO{
+	//쿼리문 수행객체를 얻기위한 SqlSessionFactory를 보유한 매니저 선언
+	MybatisConfigManager configManager = MybatisConfigManager.getInstance();
+
+	public int insert(ReBoard reboard) {
+		SqlSession sqlSession = configManager.getSession();
+		sqlSession.insert("ReBoard.insert", reboard);
+		sqlSession.commit();
+		
+		configManager.closeSession(sqlSession); //세션닫기
+		return 0;
+	}
+
+	public List selectAll() {
+		return null;
+	}
+
+	public ReBoard select(int reboard_id) {
+		return null;
+	}
+
+	public int update(ReBoard reboard) {
+		return 0;
+	}
+
+	public int delete(int reboard_id) {
+		return 0;
+	}
+
+	public int updateStep(ReBoard reboard) {
+		return 0;
+	}
+
+	public int reply(ReBoard reboard) {
+		return 0;
+	}
+
+}

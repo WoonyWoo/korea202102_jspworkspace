@@ -1,0 +1,5 @@
+<%@ page contentType="text/html;charset=UTF-8"%>
+<%
+	//넘겨받은 파라미터들을 이용하여 oracle에 넣고 + 파일도 저장 (업로드)
+	String title = request.getParameter("title");
+%>

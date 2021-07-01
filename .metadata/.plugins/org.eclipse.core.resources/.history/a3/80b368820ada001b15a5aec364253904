@@ -1,0 +1,17 @@
+package com.koreait.model2app.controller.blood;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.koreait.model2app.controller.Controller;
+
+//혈액혁 요청을 처리하는 전담 컨트롤러 클래스
+public class BloodController implements Controller{
+	public void execute(HttpServletRequest request, HttpServletResponse response) {
+		
+	}
+	
+	public String getViewName() {
+		return null;
+	}
+}

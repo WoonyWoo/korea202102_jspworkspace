@@ -1,0 +1,5 @@
+package com.koreait.model2app.controller.blood;
+
+public class BloodController {
+
+}

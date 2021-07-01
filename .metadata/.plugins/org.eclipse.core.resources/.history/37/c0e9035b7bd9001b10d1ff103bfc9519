@@ -1,0 +1,29 @@
+package study.gson;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class GSonTest {
+	//과일의 목록을 표현하는 json 문자열을 출력
+	public static void main(String[] args) {
+		//순서있는것(List), 순서 없는것(Set), key-value쌍(Map)
+		Map<String, List> map=new HashMap<String, List>();
+		
+		//리스트를 생성하여 그 안에 vo의 인스턴스 넣기!!
+		ArrayList<Fruit> list = new ArrayList<Fruit>();
+		Fruit f1 = new Fruit();
+		Fruit f2 = new Fruit();
+		Fruit f3 = new Fruit();
+		
+		f1.setName("사과");
+		f1.setPrice(5000);
+		
+		f2.setName("오렌지");
+		f2.setPrice(7000);
+		
+		f3.setName("블루베리");
+		f3.setPrice(10000);
+	}
+}

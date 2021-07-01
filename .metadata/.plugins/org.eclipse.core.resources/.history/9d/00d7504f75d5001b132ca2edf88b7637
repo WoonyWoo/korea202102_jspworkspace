@@ -1,0 +1,31 @@
+package site0621.board.model;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import site0621.board.model.domain.Board;
+import site0621.util.PoolManager;
+
+public class BoardDAO {
+	PoolManager pool = PoolManager.getInstance();
+	
+	//insert
+	public int insert(Board board) {
+		Connection con=null;
+		PreparedStatement pstmt=null;
+		con=pool.getConnection();
+		
+		
+		String sql = "insert into board(title, writer, content) values(?,?,?)";
+		try {
+			pstmt=con.prepareStatement(sql);
+			pstmt.setString(1, board.getTitle());
+			pstmt.setString(2, board.getWriter());
+			pstmt.setString(3, board.getContent());
+			result=pstmt.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+}

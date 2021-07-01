@@ -1,0 +1,7 @@
+package site0617.photo;
+
+
+//아파치 업로드를 컴포넌트를 이용한 파일업로드 구현
+public class RegistServlet {
+
+}

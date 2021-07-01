@@ -1,0 +1,14 @@
+package com.koreait.site0622.util.message;
+
+public class MessageObject {
+
+	//메시지 출력 후 원하는 url요청
+	public String getMsgURL() {
+		return null;
+	}
+	
+	//메시지 출력 후 뒤로가기
+	public String getMsgBack() {
+		return null;
+	}
+}

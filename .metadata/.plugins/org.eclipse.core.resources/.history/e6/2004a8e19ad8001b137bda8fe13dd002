@@ -1,0 +1,26 @@
+<%@page import="com.koreait.site0622.model.domain.Emp"%>
+<%@page import="java.util.List"%>
+<%@page import="com.koreait.site0622.model.office.dao.EmpDAO"%>
+<%@ page contentType="text/html; charset=UTF-8"%>
+<%!
+	EmpDAO empDAO = new EmpDAO();
+	List<Emp> empList = empDAO.selectAll();
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>empno</td>
+			<td>empno</td>
+			<td>empno</td>
+			<td>empno</td>
+			<td>empno</td>
+		</tr>
+	</table>
+</body>
+</html>

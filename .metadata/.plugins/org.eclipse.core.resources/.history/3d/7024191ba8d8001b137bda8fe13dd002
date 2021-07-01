@@ -1,0 +1,6 @@
+package com.koreait.site0622.controller.comments;
+
+//댓글 등록 요청 처리 서블릿
+public class RegistServlet {
+
+}

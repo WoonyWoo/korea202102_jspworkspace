@@ -1,0 +1,36 @@
+package com.koreait.tourapp.controller.place;
+
+import org.xml.sax.Attributes;
+import org.xml.sax.SAXException;
+import org.xml.sax.helpers.DefaultHandler;
+
+public class CultureHandler extends DefaultHandler{
+	//실행부가 어디를 지나치고 있는지를 표시할 논리 값들..
+	private boolean isAddr1;
+	private boolean isFirstimage;
+	private boolean isMapx;
+	private boolean isMapy;
+	private boolean isTitle;
+	
+	//시작태그
+	public void startElement(String uri, String localName, String tag, Attributes attributes) throws SAXException {
+		System.out.print("<"+tag+">");
+	}
+	
+	//태그사이 문자열 발견
+	@Override
+	public void characters(char[] ch, int start, int length) throws SAXException {
+		String data = new String(ch, start, length);
+		System.out.print(data);
+	}
+	
+	//닫는 태그
+	public void endElement(String uri, String localName, String tag) throws SAXException {
+		System.out.println("</"+tag+">");
+	}
+	
+	//문서 종료 태그
+	public void endDocument() throws SAXException {
+		
+	}
+}

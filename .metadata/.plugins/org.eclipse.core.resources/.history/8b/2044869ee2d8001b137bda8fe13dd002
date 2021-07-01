@@ -1,0 +1,9 @@
+/**
+ * 재사용 가능성이 높은 코드는 객체로 정의할 수 있다.
+	2015 ECMA Script 에서부터는 js도 class를 지원!!!
+ */
+class Comments{
+	constructor(){
+		
+	}
+}

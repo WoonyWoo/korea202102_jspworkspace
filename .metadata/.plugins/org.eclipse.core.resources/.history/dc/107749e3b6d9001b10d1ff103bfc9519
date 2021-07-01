@@ -1,0 +1,5 @@
+package com.koreait.mvcframework.controller.movie;
+
+public class MovieController {
+
+}

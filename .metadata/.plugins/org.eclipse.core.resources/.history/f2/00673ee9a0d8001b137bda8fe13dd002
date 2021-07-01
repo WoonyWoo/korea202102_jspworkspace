@@ -1,0 +1,31 @@
+package com.koreait.site0622.model.news.dao;
+
+import java.util.List;
+
+import com.koreait.site0622.model.domain.News;
+import com.koreait.site0622.model.mybatis.MybatisConfigManager;
+
+public class MybatisNewsDAO implements NewsDAO{
+	MybatisConfigManager configManager = MybatisConfigManager.getInstance();
+	
+	public int insert(News news) {
+		return 0;
+	}
+
+	public List selectAll() {
+		return null;
+	}
+
+	public News select(int news_id) {
+		return null;
+	}
+
+	public int update(News news) {
+		return 0;
+	}
+
+	public int delete(int news_id) {
+		return 0;
+	}
+
+}

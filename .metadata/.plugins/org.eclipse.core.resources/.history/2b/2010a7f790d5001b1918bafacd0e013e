@@ -1,0 +1,19 @@
+package com.koreait.site0622.controller.board;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.koreait.site0622.model.board.dao.MybatisBoardDAO;
+
+//게시물 삭제요청을 하는 서블릿
+public class DeleteServlet extends HttpServlet{
+	MybatisBoardDAO boardDAO;
+	
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		boardDAO = new MybatisBoardDAO();
+	}
+}

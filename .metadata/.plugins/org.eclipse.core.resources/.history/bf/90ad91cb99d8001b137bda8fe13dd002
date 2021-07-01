@@ -1,0 +1,9 @@
+package com.koreait.site0622.model.domain;
+
+public class Emp {
+	private int empno;
+	private String ename;
+	private String job;
+	private int	mgr;
+	private String hiredate;
+}

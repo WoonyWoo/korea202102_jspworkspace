@@ -1,0 +1,10 @@
+package com.koreait.site0622.model.office.dao;
+
+import com.koreait.site0622.model.mybatis.MybatisConfigManager;
+
+public class EmpDAO {
+	MybatisConfigManager configManager = MybatisConfigManager.getInstance();
+	
+	//모든 레코드 가져오기
+	
+}

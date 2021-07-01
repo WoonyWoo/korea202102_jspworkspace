@@ -1,0 +1,31 @@
+package com.koreait.site0622.controller.comments;
+
+import java.io.IOException;
+import java.util.List;
+
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.koreait.site0622.model.comments.dao.CommentsDAO;
+import com.koreait.site0622.model.comments.dao.JdbcCommentsDAO;
+import com.koreait.site0622.model.comments.dao.MybatisCommentsDAO;
+
+//댓글 목록 요청을 처리하는 서블릿
+public class ListServlet extends HttpServlet{
+	CommentsDAO commentsDAO;
+	
+	public void init(ServletConfig config) throws ServletException {
+		commentsDAO = new JdbcCommentsDAO();
+//		commentsDAO = new MybatisCommentsDAO;
+	}
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//파라미터 받기
+		int news_id = Integer.parseInt(request.getParameter("news_id"));
+		
+		List list = commentsDAO.selectByNewsId(news_id);
+	}
+}

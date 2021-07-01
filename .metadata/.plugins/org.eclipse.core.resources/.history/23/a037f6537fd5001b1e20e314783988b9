@@ -1,0 +1,17 @@
+package com.koreait.site0622.model.mybatis;
+
+import java.io.InputStream;
+
+import javax.annotation.Resources;
+
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+
+//Mybatis의 설정파일 XML을 읽어들이는 클래스
+public class MybatisConfigManager {
+	public MybatisConfigManager() {
+		String resource = "org/mybatis/example/mybatis-config.xml";
+		InputStream inputStream = Resources.getResourceAsStream(resource);
+		SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+	}
+}

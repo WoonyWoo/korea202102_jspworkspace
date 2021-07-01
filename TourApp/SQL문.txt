@@ -1,0 +1,32 @@
+<Oracle DB>
+
+create table store(
+store_id number primary key
+, addr1 varchar(100)
+, title varchar(50)
+, content clob
+, mapx number
+, mapy number
+, firstimage varchar(100)
+)
+
+create sequence seq_store
+increment by 1
+start with 1
+
+
+
+create table test(
+test_id number primary key
+, name varchar(20)
+);
+
+create sequence seq_test
+increment by 1
+start with 1;
+
+-- insert 하자마자 최근에 내 세션에서 일으킨 시퀀스 증가값
+select seq_test.currval from test;
+select seq_test.currval from dual; //daul은 1개의 값만 나타내주는 빈 값
+
+insert into test(test_id,name) values(seq_test.nextval, 'kkk');
